@@ -1,0 +1,35 @@
+{
+  "name": "ts-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -w",
+    "start": "nodemon ./dist/startup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http-status": "^1.0.1",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.11.1",
+    "@types/http-status": "^0.2.30",
+    "@types/mongoose": "^5.0.9",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^9.6.4",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.1"
+  }
+}
