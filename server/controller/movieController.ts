@@ -32,7 +32,7 @@ class MovieController {
         const movie = req.body;
         MovieApp
             .create(movie)
-            .then(s => sendReponse(res, httpStatus.CREATED, s))
+            .then(m => sendReponse(res, httpStatus.CREATED, m))
             .catch(err => console.error.bind(console, `Error ${err}`))
     }
 

@@ -13,11 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/cors": "^2.8.3",
+    "@types/jsonwebtoken": "^7.2.6",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "http-status": "^1.0.1",
-    "jwt-simple": "^0.5.1",
+    "jsonwebtoken": "^8.2.1",
     "mongoose": "^5.0.14",
     "morgan": "^1.9.0",
     "nodemon": "^1.17.3"
