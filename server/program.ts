@@ -66,14 +66,19 @@ class Program {
                         name: "tadriano",
                         admin: true
                     };
+
                 var token = jwt.sign(usuario, 'batman batman batman', {
                     expiresIn: 1440
                 });
 
                 res.json({
                     success: true,
-                    message: 'Token criado!!!',
-                    toke: token
+                    message: 'Token criado com sucesso!',
+                    token: token,
+                    usuario: {
+                        nome: 'tadriano',
+                        role: 'admin'
+                    }
                 });
             }
         });
