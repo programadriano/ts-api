@@ -1,17 +1,13 @@
 //using
-//external
 import * as express from "express";
 import * as morgan from "morgan";
 import * as bodyParser from "body-parser";
 import * as cors from "cors";
-
-//internal
 import DataBase from './config/db';
+//import Auth from './config/auth';
 
 //Routes
-
-
-//import Auth from './config/auth';
+import movieController from './controller/movieController'
 
 class Program {
     public app: express.Application;
@@ -60,6 +56,11 @@ class Program {
 
         //    this.app.use(Auth.validate);
 
+        this.app.route("/api/v1/movie").get(movieController.getAll);
+        this.app.route("/api/v1/movie/:id").put(movieController.getById);
+        this.app.route("/api/v1/movie").post(movieController.create);
+        this.app.route("/api/v1/movie/:id").put(movieController.update);
+        this.app.route("/api/v1/movie/:id").delete(movieController.delete);
     }
 }
 

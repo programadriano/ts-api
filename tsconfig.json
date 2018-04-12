@@ -14,7 +14,8 @@
         "server/**/*.ts",
         "server/*.ts",
         "spec/**/*.ts",
-        "spec/*.ts"
+        "spec/*.ts",
+        "*.ts"
     ],
     "exclude": [
         "node_modules"

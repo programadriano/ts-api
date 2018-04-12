@@ -2,11 +2,11 @@
   "name": "ts-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "startup.js",
   "scripts": {
     "test": "./node_modules/.bin/jasmine",
     "compile": "tsc -w",
-    "start": "nodemon ./dist/startup.js"
+    "start": "nodemon dist/startup.js"
   },
   "keywords": [],
   "author": "",
